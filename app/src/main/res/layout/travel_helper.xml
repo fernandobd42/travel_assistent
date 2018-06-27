@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/txtName"
+        android:layout_width="@dimen/title_width"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="20dp"
+        android:text="@string/TRAVEL_HELPER_title"
+        android:textAlignment="center"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/mileageTraveledTextView"
+        android:layout_width="@dimen/textView_width"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="@string/TRAVEL_HELPER_text_view_mileage_traveled"
+        android:textSize="@dimen/text_size"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/mileageTraveledEditText"
+        app:layout_constraintStart_toStartOf="@+id/mileageTraveledEditText"
+        app:layout_constraintTop_toBottomOf="@+id/txtName" />
+
+    <EditText
+        android:id="@+id/mileageTraveledEditText"
+        android:layout_width="@dimen/editText_width"
+        android:layout_height="wrap_content"
+        android:hint="@string/TRAVEL_HELPER_edit_text_mileage_traveled"
+        android:inputType="number"
+        android:theme="@style/EditTextTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mileageTraveledTextView" />
+
+
+    <TextView
+        android:id="@+id/litersSuppliedTextView"
+        android:layout_width="@dimen/textView_width"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/TRAVEL_HELPER_text_view_liters_supplied"
+        android:textSize="@dimen/text_size"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/litersSuppliedEditText"
+        app:layout_constraintStart_toStartOf="@+id/litersSuppliedEditText"
+        app:layout_constraintTop_toBottomOf="@+id/mileageTraveledEditText" />
+
+    <EditText
+        android:id="@+id/litersSuppliedEditText"
+        android:layout_width="@dimen/editText_width"
+        android:layout_height="wrap_content"
+        android:hint="@string/TRAVEL_HELPER_edit_text_liters_supplied"
+        android:inputType="number"
+        android:theme="@style/EditTextTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/litersSuppliedTextView" />
+
+
+    <TextView
+        android:id="@+id/gasolinePriceTextView"
+        android:layout_width="@dimen/textView_width"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/TRAVEL_HELPER_text_view_gasoline_price"
+        android:textSize="@dimen/text_size"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/gasolinePriceEditText"
+        app:layout_constraintStart_toStartOf="@+id/gasolinePriceEditText"
+        app:layout_constraintTop_toBottomOf="@+id/litersSuppliedEditText" />
+
+    <EditText
+        android:id="@+id/gasolinePriceEditText"
+        android:layout_width="@dimen/editText_width"
+        android:layout_height="wrap_content"
+        android:hint="@string/TRAVEL_HELPER_edit_text_gasoline_price"
+        android:inputType="numberDecimal"
+        android:theme="@style/EditTextTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gasolinePriceTextView" />
+
+    <TextView
+        android:id="@+id/numRefuelTextView"
+        android:layout_width="@dimen/textView_width"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/TRAVEL_HELPER_text_view_num_refuel"
+        android:textSize="@dimen/text_size"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/numRefuelditText"
+        app:layout_constraintStart_toStartOf="@+id/numRefuelditText"
+        app:layout_constraintTop_toBottomOf="@+id/gasolinePriceEditText" />
+
+    <EditText
+        android:id="@+id/numRefuelditText"
+        android:layout_width="@dimen/editText_width"
+        android:layout_height="wrap_content"
+        android:hint="@string/TRAVEL_HELPER_edit_text_num_refuel"
+        android:inputType="numberDecimal"
+        android:theme="@style/EditTextTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/numRefuelTextView" />
+
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="@dimen/button_width"
+        android:layout_margin="24dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="@color/colorPrimary"
+        android:onClick="goToListRefuel"
+        android:text="@string/SAVE"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/numRefuelditText" />
+
+</android.support.constraint.ConstraintLayout>

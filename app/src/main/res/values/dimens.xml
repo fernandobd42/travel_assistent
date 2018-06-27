@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="image_height">270dp</dimen>
+    <dimen name="title_width">280dp</dimen>
+    <dimen name="editText_width">280dp</dimen>
+    <dimen name="textView_width">280dp</dimen>
+    <dimen name="text_size">16sp</dimen>
+    <dimen name="bigText_size">24sp</dimen>
+    <dimen name="button_width">100dp</dimen>
+</resources>

@@ -1,0 +1,47 @@
+<resources>
+    <!-- TITLES. -->
+    <string name="ACTIVITY_MAIN_app_name">Travel Assistant</string>
+    <string name="REGISTER_CAR_title">Register your car</string>
+    <string name="PLAN_TRAVEL_title">Let\'s plan your travel</string>
+    <string name="PLANNED_TRAVEL_title">We planning your travel</string>
+    <string name="TRAVEL_HELPER_title">Let\'s manage your travel</string>
+
+    <!-- TEXTVIEW. -->
+    <string name="ACTIVITY_MAIN_text_view_name">Your name</string>
+    <string name="REGISTER_CAR_text_view_fuel_tank">Capacity of the fuel tank in liters</string>
+    <string name="REGISTER_CAR_text_view_average_km">Km average per liter</string>
+    <string name="PLAN_TRAVEL_text_view_mileage_traveled">Mileage to be traveled</string>
+    <string name="PLAN_TRAVEL_text_view_gasoline_price">Gasoline Liter Price</string>
+    <string name="PLAN_TRAVEL_text_view_bus_price">Bus ticket price</string>
+    <string name="PLAN_TRAVEL_text_view_how_many_travelers">How many travelers</string>
+    <string name="TRAVEL_HELPER_text_view_liters_supplied">Km average per liter</string>
+    <string name="TRAVEL_HELPER_text_view_mileage_traveled">Mileage traveled</string>
+    <string name="TRAVEL_HELPER_text_view_gasoline_price">Gasoline Liter Price</string>
+    <string name="TRAVEL_HELPER_text_view_num_refuel">Num of Refuel</string>
+
+
+    <!-- EDITVIEW. -->
+    <string name="ACTIVITY_MAIN_edit_text_name">your name</string>
+    <string name="REGISTER_CAR_edit_text_fuel_tank">capacity of the fuel tank in liters</string>
+    <string name="REGISTER_CAR_edit_text_average_km">km average per liter</string>
+    <string name="PLAN_TRAVEL_edit_text_mileage_traveled">mileage to be traveled</string>
+    <string name="PLAN_TRAVEL_edit_text_gasoline_price">gasoline liter price</string>
+    <string name="PLAN_TRAVEL_edit_text_bus_price">bus ticket price</string>
+    <string name="PLAN_TRAVEL_edit_text_how_many_travelers">how many travelers</string>
+    <string name="TRAVEL_HELPER_edit_text_liters_supplied">km average per liter</string>
+    <string name="TRAVEL_HELPER_edit_text_mileage_traveled">mileage traveled</string>
+    <string name="TRAVEL_HELPER_edit_text_gasoline_price">gasoline liter price</string>
+    <string name="TRAVEL_HELPER_edit_text_num_refuel">Num of Refuel</string>
+
+    <!-- BUTTONS. -->
+    <string name="ENTER_BUTTON">Enter</string>
+    <string name="PLAN_TRAVEL">PLAN TRAVEL</string>
+    <string name="SAVE">SAVE</string>
+    <string name="GO_TO_LIST_PLANNED">PLANNED TRAVEL LIST</string>
+    <string name="GO_TO_TRAVEL_HELPER">TRAVEL HELPER</string>
+    <string name="GO_TO_LIST_REFUEL">LIST REFUEL</string>
+
+    <!-- IMAGES. -->
+    <string name="ACTIVITY_MAIN_cover_image">imagem de capa</string>
+
+</resources>

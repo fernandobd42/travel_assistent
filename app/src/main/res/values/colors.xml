@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#f98c00</color>
+    <color name="colorPrimaryDark">#d47a07</color>
+    <color name="colorAccent">#898385</color>
+    <color name="white">#FFF</color>
+
+    <style name="EditTextTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorControlActivated">@color/colorPrimary</item>
+        <item name="colorControlHighlight">@color/colorPrimaryDark</item>
+    </style>
+
+</resources>
+

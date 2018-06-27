@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/txtName"
+        android:layout_width="@dimen/title_width"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="20dp"
+        android:text="@string/PLAN_TRAVEL_title"
+        android:textAlignment="center"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/mileageToBeTraveledTextView"
+        android:layout_width="@dimen/textView_width"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="@string/PLAN_TRAVEL_text_view_mileage_traveled"
+        android:textSize="@dimen/text_size"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/mileageToBeTraveledEditText"
+        app:layout_constraintStart_toStartOf="@+id/mileageToBeTraveledEditText"
+        app:layout_constraintTop_toBottomOf="@+id/txtName" />
+
+    <EditText
+        android:id="@+id/mileageToBeTraveledEditText"
+        android:layout_width="@dimen/editText_width"
+        android:layout_height="wrap_content"
+        android:hint="@string/PLAN_TRAVEL_edit_text_mileage_traveled"
+        android:inputType="number"
+        android:theme="@style/EditTextTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mileageToBeTraveledTextView" />
+
+    <TextView
+        android:id="@+id/gasolinePriceTextView"
+        android:layout_width="@dimen/textView_width"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/PLAN_TRAVEL_text_view_gasoline_price"
+        android:textSize="@dimen/text_size"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/gasolinePriceEditText"
+        app:layout_constraintStart_toStartOf="@+id/gasolinePriceEditText"
+        app:layout_constraintTop_toBottomOf="@+id/mileageToBeTraveledEditText" />
+
+    <EditText
+        android:id="@+id/gasolinePriceEditText"
+        android:layout_width="@dimen/editText_width"
+        android:layout_height="wrap_content"
+        android:hint="@string/PLAN_TRAVEL_edit_text_gasoline_price"
+        android:inputType="numberDecimal"
+        android:theme="@style/EditTextTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gasolinePriceTextView" />
+
+    <TextView
+        android:id="@+id/busTicketPriceTextView"
+        android:layout_width="@dimen/textView_width"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/PLAN_TRAVEL_text_view_bus_price"
+        android:textSize="@dimen/text_size"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/busTicketPriceEditText"
+        app:layout_constraintStart_toStartOf="@+id/busTicketPriceEditText"
+        app:layout_constraintTop_toBottomOf="@+id/gasolinePriceEditText" />
+
+    <EditText
+        android:id="@+id/busTicketPriceEditText"
+        android:layout_width="@dimen/editText_width"
+        android:layout_height="wrap_content"
+        android:hint="@string/PLAN_TRAVEL_edit_text_bus_price"
+        android:inputType="numberDecimal"
+        android:theme="@style/EditTextTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/busTicketPriceTextView" />
+
+    <TextView
+        android:id="@+id/howManyTravelersTextView"
+        android:layout_width="@dimen/textView_width"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/PLAN_TRAVEL_text_view_how_many_travelers"
+        android:textSize="@dimen/text_size"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/howManyTravelersSeekBar"
+        app:layout_constraintStart_toStartOf="@+id/busTicketPriceTextView"
+        app:layout_constraintTop_toBottomOf="@+id/busTicketPriceEditText"/>
+
+    <SeekBar
+        android:id="@+id/howManyTravelersSeekBar"
+        android:layout_width="@dimen/editText_width"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:max="5"
+        android:theme="@style/EditTextTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/howManyTravelersTextView" />
+
+    <TextView
+        android:id="@+id/howManyTravelersValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textSize="@dimen/text_size"
+        android:textStyle="bold"
+        android:theme="@style/EditTextTheme"
+        app:layout_constraintEnd_toEndOf="@+id/howManyTravelersTextView"
+        app:layout_constraintTop_toBottomOf="@+id/howManyTravelersTextView" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="@dimen/button_width"
+        android:layout_margin="24dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="@color/colorPrimary"
+        android:onClick="goToListPlannedTravelPage"
+        android:text="@string/SAVE"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/howManyTravelersSeekBar" />
+
+</android.support.constraint.ConstraintLayout>

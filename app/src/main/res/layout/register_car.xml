@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:layout_editor_absoluteY="81dp">
+
+    <TextView
+        android:id="@+id/txtName"
+        android:layout_width="@dimen/title_width"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/REGISTER_CAR_title"
+        android:textAlignment="center"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/fuelTankTextView"
+        android:layout_width="@dimen/textView_width"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/REGISTER_CAR_text_view_fuel_tank"
+        android:textSize="@dimen/text_size"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/fuelTankSeekBar"
+        app:layout_constraintStart_toStartOf="@+id/fuelTankSeekBar"
+        app:layout_constraintTop_toBottomOf="@+id/txtName" />
+
+    <SeekBar
+        android:id="@+id/fuelTankSeekBar"
+        android:layout_width="@dimen/editText_width"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:max="80"
+        android:theme="@style/EditTextTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fuelTankTextView" />
+
+    <TextView
+        android:id="@+id/fuelTankValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textSize="@dimen/text_size"
+        android:textStyle="bold"
+        android:theme="@style/EditTextTheme"
+        app:layout_constraintEnd_toEndOf="@+id/fuelTankTextView"
+        app:layout_constraintTop_toBottomOf="@+id/fuelTankTextView" />
+
+    <TextView
+        android:id="@+id/averageKmTextView"
+        android:layout_width="@dimen/textView_width"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/REGISTER_CAR_text_view_average_km"
+        android:textSize="@dimen/text_size"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/averageKmEditTxt"
+        app:layout_constraintStart_toStartOf="@+id/averageKmEditTxt"
+        app:layout_constraintTop_toBottomOf="@+id/fuelTankSeekBar" />
+
+    <EditText
+        android:id="@+id/averageKmEditTxt"
+        android:layout_width="@dimen/editText_width"
+        android:layout_height="wrap_content"
+        android:hint="@string/REGISTER_CAR_edit_text_average_km"
+        android:inputType="numberDecimal"
+        android:theme="@style/EditTextTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/averageKmTextView" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="@dimen/button_width"
+        android:layout_margin="24dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="@color/colorPrimary"
+        android:onClick="goToPlanTravelPage"
+        android:text="@string/ENTER_BUTTON"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/averageKmEditTxt" />
+
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.fernandolucasgontijo.travel_assistant.MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/image_height"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:adjustViewBounds="true"
+        android:background="@color/colorPrimaryDark"
+        android:contentDescription="@string/ACTIVITY_MAIN_cover_image"
+        android:src="@drawable/main_img" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="@dimen/title_width"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView"
+        android:layout_centerHorizontal="true"
+        android:text="@string/ACTIVITY_MAIN_app_name"
+        android:textAlignment="center"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/nameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button"
+        android:layout_alignLeft="@+id/nameEditTxt"
+        android:layout_alignStart="@+id/nameEditTxt"
+        android:layout_marginBottom="43dp"
+        android:text="@string/ACTIVITY_MAIN_text_view_name"
+        android:textSize="@dimen/text_size"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/nameEditTxt"
+        android:layout_width="@dimen/editText_width"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:hint="@string/ACTIVITY_MAIN_edit_text_name"
+        android:inputType="text"
+        android:textSize="@dimen/text_size"
+        android:theme="@style/EditTextTheme"/>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="@dimen/button_width"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nameEditTxt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:background="@color/colorPrimary"
+        android:onClick="goToInitialPage"
+        android:text="@string/PLAN_TRAVEL"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/btnGet"
+        android:layout_width="@dimen/button_width"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:background="@color/colorPrimary"
+        android:onClick="goToPlannedList"
+        android:text="@string/GO_TO_LIST_PLANNED"
+        android:textColor="@color/white" />
+
+
+</RelativeLayout>
