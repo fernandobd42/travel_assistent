@@ -56,7 +56,7 @@ public class CreateDB extends SQLiteOpenHelper {
 
 
         db.execSQL(TRAVEL_PLANNING);
-//        db.execSQL(TRAVEL_HELPER);
+        db.execSQL(TRAVEL_HELPER);
     }
 
     @Override
